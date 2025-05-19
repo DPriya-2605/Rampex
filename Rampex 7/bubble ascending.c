@@ -1,0 +1,20 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int i,j,temp;
+    int arr[]={6,4,9,0,3,2};
+    for(i=0;i<6;i++){
+        for(j=i+1;j<6;j++){
+        if(arr[i]>arr[j]){
+            temp=arr[i];
+            arr[i]=arr[j];
+            arr[j]=temp;
+        }
+    }
+    }
+    for(i=0;i<6;i++){
+    printf("%d\n",arr[i]);
+    }
+    return 0;
+    }
